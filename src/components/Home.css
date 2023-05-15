@@ -1,0 +1,85 @@
+
+
+* {
+  font-family: 'Matter', Helvetica, Arial, sans-serif;
+}
+
+.home-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+   
+}
+
+.content {
+  opacity: 1;
+  animation: fadeInUp 1s forwards;
+  padding-left: 10px;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.heading {
+  margin-top: 0;
+  font-family: 'Merriweather', serif;
+  font-size: 78px;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.intro {
+  font-family: 'Merriweather', serif;
+  font-size: 23px;
+  margin-bottom: 60px;
+  color: #000;
+  width: 90%;
+}
+
+.home-container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #fff, #ddd);
+  opacity: 0.6;
+  z-index: -1;
+  animation: animatedGradient 10s linear infinite;
+}
+
+@keyframes animatedGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

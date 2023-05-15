@@ -1,0 +1,92 @@
+.projects-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.projects-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+    font-weight: bold;
+    animation: animatedGradient 3s ease-in-out ;
+      
+
+}
+
+@keyframes animatedGradient  {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+.project-card {
+  background-color: #f5f5f5;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.project-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.project-description {
+  font-size: 14px;
+  color: #929ca6;
+  margin-bottom: 10px;
+  padding-right: 50px;
+}
+
+.technologies-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.technology-icon {
+  font-size: 24px;
+  margin: 10px;
+}
+.technology-icon:hover {
+  color: #007bff;
+  cursor: pointer;
+  font-size: 39px;
+}
+
+.project-technologies {
+  color: #888;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.project-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #0056b3;
+}
+
+.project-card:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
