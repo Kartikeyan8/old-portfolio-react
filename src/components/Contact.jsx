@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css';
-
+import emailjs from '@emailjs/browser';
 const Contact = () => {
   const [formValues, setFormValues] = useState({
     name: '',
@@ -23,6 +23,7 @@ const Contact = () => {
       setSuccessMessage('Message sent successfully!');
       setErrorMessage('');
       setFormValues({ name: '', email: '', message: '' });
+      emailjs.sendForm('service_5qftj5r', 'template_8zo6rjt', event.target, 'ewX1klxZ6PENNWx6C')
     } else {
       setErrorMessage('Please fill in all fields.');
       setSuccessMessage('');

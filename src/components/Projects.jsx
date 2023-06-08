@@ -35,8 +35,8 @@ const Projects = () => {
     slidesToScroll: 1,
 
     autoplay: true,
-    autoplaySpeed: 2000,
-    cssEase: 'linear',
+    autoplaySpeed: 1500,
+    easing: 'easeOutElastic',
     pauseOnHover: true
     ,
     responsive: [
